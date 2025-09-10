@@ -91,20 +91,20 @@ if menu == "🏠 Home":
 
     st.markdown(
         """
-        - 🎯**Halaman Hasil Model** adalah menu yang menampilkan hasil evaluasi model Logistic Regression berupa Accuracy, Precision, Recall, F1-Score.
+        - 🎯**Halaman Hasil Model** adalah menu yang menampilkan hasil evaluasi model Logistic Regression berupa Accuracy, Precision, Recall, dan F1-Score.
         - 📈 **Halaman Sentimen** adalah menu kedua untuk melihat distribusi sentimen dan emosi, serta input analisis teks atau file CSV.  
         """
     )
 
-    # Tentang aplikasi
-    st.subheader("Tentang Aplikasi")
+    # Tentang sistem
+    st.subheader("Tentang Sistem")
     st.markdown(
         """
-        Aplikasi ini dirancang untuk memprediksi sentimen dari ulasan yang diinputkan pengguna menggunakan beberapa model yang telah dilatih menggunakan dataset yang ada. Pengguna dapat memasukkan teks komentar, dan sistem akan memproses teks tersebut untuk menentukan sentimennya berdasarkan model tersebut.
+        Sistem ini dirancang untuk memprediksi sentimen dari ulasan atau komentar yang diinputkan pengguna menggunakan beberapa model yang telah dilatih menggunakan dataset yang ada. Pengguna dapat memasukkan teks komentar, dan sistem akan memproses teks tersebut untuk menentukan sentimennya berdasarkan model tersebut.
 
         Cara Kerja Sistem:
 
-        1. **Input Komentar**: Pengguna memasukkan teks komentar ke dalam sistem.
+        1. **Input Komentar**: Pengguna dapat memasukkan teks komentar atau file csv yang berisikan kumpulan komentar ke dalam sistem.
         2. **Prediksi Sentimen**: Teks atau file CSV yang sudah diproses kemudian dianalisis menggunakan model Logistic Regression yang sudah dilatih sebelumnya pada dataset untuk memprediksi sentimen.
         3. **Output Sentimen**: Hasil prediksi dari model (positif, negatif) dan emosi ditampilkan kepada pengguna.
         """
@@ -242,3 +242,4 @@ elif menu == "📈 Halaman Sentimen":
                     file_name="hasil_analisis_sentimen.csv",
                     mime="text/csv"
                 )
+
